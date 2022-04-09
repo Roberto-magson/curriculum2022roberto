@@ -1,0 +1,27 @@
+<?php
+$nombre = $_POST['nombre'];
+$apellido1 = $_POST['apellido1'];
+$apellido2 = $_POST['apellido2'];
+$nombreEmpresa = $_POST['nombreEmpresa'];
+$numero = $_POST['numero'];
+$correoElectronico = $_POST['correoElectronico'];
+$message = $_POST['message'];
+
+$header = 'From: ' . $mail . "\r\n";
+$header = "X-Mailer: PHP/" . phpversion() . "\r\n";
+$header = "Mime-Version: 1.0 \r\n";
+$header = "Content-Type: text/plain";
+
+$message = "Este mensaje fue enviado por : " . $nombre . "\r\n";
+$message = "Con apellidos: " . $apellido1 . $apellido2 . "\r\n";
+$message = "La empresa es: " . $nombreEmpresa . "\r\n";
+$message = "El numero del interesado es: " . $numero . "\r\n";
+$message = "El correo electronico es: " . $correoElectronico . "\r\n";
+
+$para = 'robertomagromas@gmail.com';
+$asunto = 'Asunto del mensaje';
+
+mail($para, $asunto, utf8_decode($message), $header);
+
+header("Location:index.html");
+?>

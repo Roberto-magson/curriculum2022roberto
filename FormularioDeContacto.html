@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+			
+		<link href="css/estilo.css" rel="stylesheet" type="text/css">
+	
+		<meta charset="UTF-8">
+		<title>Roberto Magro</title>
+		<link href="css/estilo.css" rel="stylesheet" type="text/css">
+	
+	<body>
+		<ul class="menu">
+			<li><a href= "primerapagina.html" >Presentaciòn</a></li>
+			<li><a href= "segundapagina.html" >Informacion personal</a></li>
+			<li><a href= "tercerapagina.html" >Formacion</a></li>
+			<li><a href= "cuartapagina.html" >Informacion relevante</a></li>
+			<li><a href= "quintapagina.html" >Contacto</a></li>
+		</ul>
+	</body>		
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		
+		<h1>Formulario</h1>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			
+			
+		<form action="enviarPHP.php" method="post">
+			
+		<br/>
+				
+			<dd>
+				Nombre y apellidos:
+				<input type="text" size="15" maxlength="30" placeholder="Nombre" name="nombre">
+				
+				<input type="text" size="15" maxlength="30" placeholder="Apellido1" name="apellido1">
+				
+				<input type="text" size="15" maxlength="30" placeholder="Apellido2" name="apellido2">
+				<br><br/>
+				Empresa:
+				<input type="text" size="15" maxlength="30" placeholder="Nombre empresa" name="nombre empresa">
+				<br/><br/>
+				Numero de telefono:
+				<input type="number" size="15" maxlength="30" placeholder="Numero" name="numero">
+				<br/><br/>
+				Correo electronico:
+				<input type="text" size="15" maxlength="30" placeholder="Correo electronico" name="correoElectronico">
+				
+			<dd/>
+			
+		<br/>
+		
+			<li>Selecciona tu genero:</li>
+			<br/>
+			<input name="cbimujer" type="checkbox"  />Mujer
+			<br/>
+			<input name="cbihombre" type="checkbox" />Hombre		
+			<br><br/>
+			<br><br/>
+
+			<dd>
+				<select name="entradalista">
+					<optgroup label="Ciudades">
+					<option>Badajoz</option>
+					<option>Caceres</option>
+					<option>Merida</option>
+					<option>Plasencia</option>
+					
+				</select>
+			<dd/>	
+		
+		<br/>
+		
+			<button type="submit" class="btn btn-primary" >Enviar</button>
+		</form>	
+				
+			
+				
+	</body>
+</html>
+
